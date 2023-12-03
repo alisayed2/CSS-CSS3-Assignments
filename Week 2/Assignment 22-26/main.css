@@ -1,0 +1,47 @@
+/* Question 1 */
+.q-1 {
+    border: 5px solid #009688;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    width: 600px;
+    margin:auto
+}
+
+.q-1 p {
+    background-color: #ebeaea;
+    border: inherit;
+    padding: inherit;
+    margin: inherit;
+}
+
+/* Question 2 */
+
+.q-2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    line-height: 1.6;
+}
+.q-2 .a {
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Open Sans" , sans-serif;
+}
+.q-2 .b {
+    font-family: Cairo;
+    font-weight: 700
+}
+.q-2 .c {
+    font-family: 'Jomhuria';
+}
+
+/* Question 3 */
+html { font-size: 20px}
+.one, .two, .three {
+    text-align: center;
+    text-transform: capitalize
+}
+.one { font-size: 2.5rem}
+.two { font-size: 2rem}
+.tree { font-size: 1.5rem}

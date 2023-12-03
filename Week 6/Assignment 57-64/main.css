@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Question 1 */
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 12% 1fr;
+    gap: 20px ; 
+  }
+
+.grid div {
+    background-color: #607D8B;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .child-1::after {
+    content: "element 1";
+}
+
+.grid .child-2::after {
+    content: "element 2";
+}
+
+.grid .child-3::after {
+    content: "element 3";
+}
+
+.grid .child-4::after {
+    content: "element 4";
+}
+
+.grid .child-5::after {
+    content: "element 5";
+}
+
+.grid .child-6::after {
+    content: "element 6";
+}
+
+
+/* Question 2 */
+
+.layout {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% 80% 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: white;
+}
+
+header {
+    background-color: #03A9F4;
+    grid-area: 1 / 1 / 2 / 11;
+    padding: 20px
+}
+
+header::after {
+    content: "header";
+}
+
+section {
+    background-color: #FF5722;
+    grid-area: 2 / 1 / 3 / 9;
+   padding: 20px
+}
+
+section::after {
+    content: "section";
+}
+
+aside {
+    background-color: #607D8B;
+    grid-area: 2 / 9 / 3 / 11;
+    padding: 20px
+}
+
+aside::after {
+    content: "aside";
+}
+
+footer {
+    background-color: #009688;
+    grid-area: 3 / 1 / 4 / 11;
+    padding: 20px
+}
+
+footer::after {
+    content: "footer";
+}
+
+/* Question 3 */
+
+.grid-q3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: 80% 8%;
+    gap: 20px;
+  }
+
+.grid-q3 div {
+    color: white;
+    font-weight: bold;
+    background-color: #403F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.grid-q3 .child-1 {
+    grid-area: 1 / 1 / 2 / 2 ;
+  }
+
+  .grid-q3 .child-2 {
+    grid-area: 1 / 2 / 2 / 3 ;
+  }
+
+  .grid-q3 .child-3 {
+    grid-area: 1 / 3 / 2 / 4 ;
+  }
+
+  .grid-q3 .child-4 {
+    grid-area: 1 / 4 / 2 / 5 ;
+  }
+
+  .grid-q3 .child-5 {
+    grid-area: 2 / 1 / 3 / 2 ;
+  }
+
+  .grid-q3 .child-6 {
+    grid-area: 2 / 2 / 3 / 3 ;
+  }
+
+  .grid-q3 .child-7 {
+    grid-area: 2 / 3 / 3 / 4 ;
+  }
+
+  .grid-q3 .child-8 {
+    grid-area: 2 / 4 / 3 / 5 ;
+  }
+
+  /* Question 4 */
+
+  .grid-q4 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap:  20px;
+  }
+
+  .grid-q4 div {
+    background-color: #2196F3;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-q4 .one {
+    grid-area: 6 / 1 / 7 / span 3;
+  }
+
+  .grid-q4 .two {
+    grid-area: 2 / 1 / 3 / span 2;
+  }
+
+  .grid-q4 .five {
+    grid-area: 3 / 2 / span 3 / span 2;
+  }
+
+  .grid-q4 .eight {
+    grid-area: 1 / 1 / 2 / span 3;
+  }
+
+
+  /* Question 5 */
+  .grid-q5 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-content: space-between;
+    column-gap: 20px;
+  }
+
+  .grid-q5 div {
+    background-color: #E91E63;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+

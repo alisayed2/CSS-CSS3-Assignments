@@ -1,0 +1,188 @@
+*{box-sizing: border-box;}
+/* Question two */
+.q1 {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #FF5722;
+    border-radius: 50% 50%;
+    border-left: 5px solid #03A9F4;
+    border-right: 5px solid #FF5722;
+}
+
+/* Question Two */
+.parent {
+    box-sizing: border-box;
+    width: 600px;
+    height: 300px;
+    padding: 1.5%;
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent div {
+    background-color: #F44336 ;
+    color: white;
+    text-align: center;
+    width: calc(94% / 3);
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Question Three */
+.parent-q3 {
+    box-sizing: border-box;
+    width: 600px;
+    height: 300px;
+    padding: 1.5%;
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.parent-q3 div {
+    width: calc(94% / 3);
+    background-color: #607D8B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-q3 .one , .three {
+    height: 10%;
+}
+.parent-q3 .six {order: -5}
+.parent-q3 .three {order: -4}
+.parent-q3 .four {order: -3}
+.parent-q3 .five {order: -2}
+.parent-q3 .two {order: -1}
+.parent-q3 .one {align-self: flex-end}
+
+/* Question Four */
+.parent-q4 {
+    width: 600px;
+    height: 300px;
+    padding: 1.5%;
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.parent-q4 div {
+    background-color: #009688;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-q4 .one, .three {width: 5%; height: 25%}
+.parent-q4 .two {
+    width: 50%;
+    height: 25%;
+    align-self: flex-start;
+}
+
+/* Question Five */
+.parent-q5 {
+    width: 600px;
+    height: 300px;
+    padding: 1.5%;
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.parent-q5 div {
+    width: 18%;
+    height: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent-q5 .one {background-color: #FF9800;}
+.parent-q5 .two {background-color: #8BC34A;}
+.parent-q5 .three {background-color: #795548;}
+.parent-q5 .four {
+    background-color: #673AB7;
+    order: -1;
+}
+.parent-q5 .four, .two {align-self: flex-end;}
+
+/* Question Six */
+.page {
+    width: 80%;
+    height: 500px;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5%;
+    width: 100%;
+}
+.page-header .logo {width: 8%;}
+.page-header .main-nav {width: 90%;justify-content: flex-end;}
+.page-header .logo ,.main-nav {
+    background-color: #DDDDDD;
+     padding: 10px;
+     height: 45px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+.page-header .main-nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 5px;
+}
+.page-header .main-nav ul {margin: 0; padding: 5px;}
+.main-area {
+    width: 100%;
+    height: calc(410px - 3%);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5%;
+}
+.main-area .content {
+    width: 70%;
+}
+.main-area .sidebar {
+    width: 28%;
+}
+.main-area .content, .sidebar {
+    padding: 5px;
+    background-color: #DDDDDD ;
+}
+.page-footer {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    background-color: #dddddd;
+}
+.page-footer .copyright, .design {display: flex;align-items: center;}
+.page-footer .copyright {width: 85%; padding: 5px;}

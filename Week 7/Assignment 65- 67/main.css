@@ -1,0 +1,97 @@
+/* Question 1 */
+
+.q1 {
+    width: 300px;
+    height: 200px;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    color: #03A9F4;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.q1::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 200px;
+    background-color: #03A9F4;
+    transform: rotate(-8deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.q1::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 200px;
+    background-color: #E91E63;
+    transform: rotate(8deg);
+    position: absolute;
+    z-index: -2;
+}
+
+/* Question 2 */
+
+.q2 {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.q2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 10px solid;
+    border-color: #E91E63 #E91E63 #E91E63 transparent;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.q2::before{
+    content: "";
+    display: block;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 10px solid;
+    border-color: #2196F3 transparent #2196F3 #2196F3 ;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Question 3 */
+
+.q2:hover::after {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.q2:hover::before{
+    transform: rotate(360deg);
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.q2:not(:hover)::after {
+    transform: rotate(-360deg);
+    transition: 1s;
+}
+.q2:not(:hover):before{
+    transform: rotate(-360deg);
+    transition: 1s;
+    transition-delay: 1s;
+}

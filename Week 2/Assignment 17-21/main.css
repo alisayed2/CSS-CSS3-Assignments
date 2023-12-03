@@ -1,0 +1,68 @@
+/* Question 1 */
+
+/* div {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 100px;
+}
+p {
+    text-shadow: 2px 2px 0 #F44336,
+     4px 4px 0 #2394F1,
+     6px 6px 0 #95688B;
+} */
+
+
+/* Question 2 */
+
+/* p {
+    text-align: center;
+    font-size: 100px;
+}
+.one {
+    text-transform: uppercase;
+}
+.two {
+    text-transform:capitalize;
+}
+.three {
+    text-transform:lowercase;
+} */
+
+/* Question 3 */
+
+div {
+    width: 400px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    font-size: 20px ;
+    margin : 30px auto;
+}
+.two, .three {
+    overflow: hidden;
+}
+.two {
+    white-space: nowrap;
+    border-right: 100px solid #EEEEEE;
+    width: 300px;
+}
+.three {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Question 4 */
+a {
+    display: block;
+    width: 530px;
+    height: 100px;
+    margin: auto;
+    padding: 60px 0 ;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 100px;
+    color: white;
+    background-color: #009688;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-bottom: 25px solid #00514A
+}

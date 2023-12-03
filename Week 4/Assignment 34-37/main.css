@@ -1,0 +1,99 @@
+/* Question 1 */
+div {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: #EEEEEE;
+    text-align: center;
+    line-height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div:empty {
+    background-color: red;
+}
+
+/* Question 2 */
+.q2 {
+    width: fit-content;
+    position: relative;
+    padding: 0 20px;
+}
+
+.q2:first-letter {
+    background-color: red;
+    color: white;
+    padding: 15px 10px;
+    margin-left: -35px 
+}
+
+/* Question 3 */
+/* p {
+    width:600px;
+    height: 60px;
+    margin: 25px auto;
+    background-color: #EFEFEF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 57px;
+    position: relative;
+    border-left: 5px solid #E91E63;
+}
+
+p::before {
+    content: attr(data-person);
+    position: absolute;
+    left: -130px;
+    background-color:inherit;
+    width: 100px;
+    text-align: center
+}
+
+p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent #E91E63 transparent transparent;
+    position: absolute;
+    left: -34px;
+    top: calc(50% - 15px)
+} */
+
+/* Question 4 */
+
+p {
+    width:600px;
+    height: 60px;
+    margin: 25px auto;
+    background-color: #EFEFEF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 57px;
+    position: relative;
+    counter-increment: count-p;
+}
+
+p::before {
+    content:  counter(count-p);
+    background-color:#F44336;
+    color:white;
+    display: inline-block;
+    font-weight: bold;
+    width: 65px;
+    height: 100%;
+    text-align: center;
+    margin-right: 40px;
+}
+
+p::after {
+    content:"";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background-color: #F44336;
+    position: absolute;
+    right: 0;
+}

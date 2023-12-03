@@ -1,0 +1,79 @@
+/* Question 1 */
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #F2F2F4;
+    text-align: center;
+    margin: 60px auto;
+    text-transform: capitalize;
+    padding-top: 60px;
+    margin-top: 100px;
+    font-size: 30px;
+    transition: margin-top .5s 0s linear, padding-bottom .5s .5s linear;
+}
+
+.parent:hover {
+    margin-top: 30px;
+}
+
+.child {
+    width: 450px;
+    height: 80px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #DEDEDC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: margin-top .5s .5s linear;
+}
+
+.parent:hover .child {
+    margin-top: 60px;
+}
+
+/* Question 2 */
+
+.q2 {
+    width: 400px !important;
+    margin: 20px auto ;
+    background-color: #EEEEEE !important;
+    font-size: 20px !important;
+    border: none !important;
+    text-align: center;
+    color: black !important;
+    position: relative;
+    z-index: 1;
+    height: 40px;
+}
+
+.q2::before {
+    content: "elzero";
+    text-transform: capitalize;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+
+/* Question 3 */
+
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+  }  */
+  
+.element {
+    border: 2px solid var(--mainColor, black);
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    margin-top: 20px;
+  }

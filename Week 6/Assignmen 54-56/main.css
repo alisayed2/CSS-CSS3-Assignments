@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Question one */
+
+.q1 {
+    width: 600px;
+    height: 200px;
+    margin: 30px auto;
+    font-size: 4em;
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    border-left: 10px solid #F44336;
+    border-right: 10px solid #673AB7;
+    position: relative;
+}
+
+.q1::first-letter {color: #F44336;}
+
+.q1::before {
+    content: "";
+    width: calc(100% + 20px);
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    background-image: linear-gradient(to right,
+     #F44336 20%,
+     #2196F3 20%, #2196F3 40%,
+     #4CAF50 40%, #4CAF50 60%,
+     #E91E63 60%, #E91E63 80%,
+     #673AB7 80%
+     );
+}
+
+.q1::after {
+    content: "";
+    width: calc(100% + 20px);
+    height: 10px;
+    position: absolute;
+    bottom: -10px;
+    background-image: linear-gradient(to right,
+     #F44336 20%,
+     #2196F3 20%, #2196F3 40%,
+     #4CAF50 40%, #4CAF50 60%,
+     #E91E63 60%, #E91E63 80%,
+     #673AB7 80%
+     );
+}
+
+/* Question Two */
+
+.q2 {
+    width: 600px;
+    height: 100px;
+    background-color: #F4F4F4;
+    margin: 20px 10px;
+    position: relative;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    caret-color: #F44336;
+    border: none;
+}
+
+input:focus{outline: none;}
+
+.q2::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-image: linear-gradient(to right,
+    #F44336 50%,
+    #009688 50%);
+}

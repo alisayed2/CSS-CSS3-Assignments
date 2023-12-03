@@ -1,0 +1,15 @@
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 50%;
+    height: 50%;
+    background-color: violet;
+}
